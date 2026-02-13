@@ -85,7 +85,7 @@ with st.sidebar:
 
 # Selected model
 info = artifacts[model_name]
-model = load_model(info['model_file']).replace("\\", "/")
+model = load_model(info['model_file'])
 
 col1, col2 = st.columns([1.25, 1])
 
