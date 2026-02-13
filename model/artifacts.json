@@ -88,7 +88,7 @@
     }
   },
   "Random Forest (Ensemble)": {
-    "model_file": "model\\Random_Forest_Ensemble.joblib",
+    "model_file": "model/Random_Forest_Ensemble.joblib",
     "confusion_matrix": [
       [
         72,
@@ -133,6 +133,7 @@
   }
 
 }
+
 
 
 
