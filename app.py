@@ -33,7 +33,7 @@ def load_model(model_file: str):
 
 def plot_confusion_matrix(cm, labels=('benign', 'malignant')):
     fig, ax = plt.subplots(figsize=(4.5, 4))
-    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues',
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Greens',
                 xticklabels=labels, yticklabels=labels, ax=ax)
     ax.set_xlabel('Predicted')
     ax.set_ylabel('Actual')
