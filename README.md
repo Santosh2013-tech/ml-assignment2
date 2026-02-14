@@ -1,5 +1,5 @@
 
-# ML Assignment 2 – Multiple Classifiers and Streamlit App
+# ML Assignment 2 – Multiple Classifiers + Streamlit App
 
 ## a) Problem statement
 Build and compare multiple machine-learning classification models on **one** public dataset, compute required evaluation metrics, and demonstrate the models in an interactive **Streamlit** web application. The app supports uploading test CSV data, selecting a model, viewing evaluation metrics, and viewing a confusion matrix / classification report.
