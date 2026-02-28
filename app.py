@@ -13,24 +13,24 @@ from src.data import load_dataset
 
 st.set_page_config(page_title='ML Assignment 2 - Classification Models', layout='wide')
 
-
+print("Hello, Streamlit1")
 @st.cache_data
 def load_metrics_table():
     p = Path('model') / 'model_comparison_metrics.csv'
     return pd.read_csv(p)
 
-
+print("Hello, Streamlit2")
 @st.cache_data
 def load_artifacts():
     with open(Path('model') / 'artifacts.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
-
+print("Hello, Streamlit3")
 @st.cache_resource
 def load_model(model_file: str):
     return joblib.load(model_file)
 
-
+print("Hello, Streamlit4")
 def plot_confusion_matrix(cm, labels=('benign', 'malignant')):
     fig, ax = plt.subplots(figsize=(4.5, 4))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Greens',
@@ -41,7 +41,7 @@ def plot_confusion_matrix(cm, labels=('benign', 'malignant')):
     plt.tight_layout()
     return fig
 
-
+print("Hello, Streamlit5")
 def compute_user_metrics(y_true, y_pred, y_score=None):
     from sklearn.metrics import (
         accuracy_score, roc_auc_score, precision_score, recall_score,
@@ -62,7 +62,7 @@ def compute_user_metrics(y_true, y_pred, y_score=None):
     rep = classification_report(y_true, y_pred, target_names=['benign', 'malignant'], zero_division=0)
     return m, cm, rep
 
-
+print("Hello, Streamlit6")
 st.title('Machine Learning Assignment 2 - End-to-End Classification & Streamlit')
 st.write('This app loads six classification models trained on the Breast Cancer Wisconsin (Diagnostic) dataset (binary classification).')
 
